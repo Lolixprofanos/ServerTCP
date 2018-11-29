@@ -33,17 +33,17 @@ try:
 
     if select == "n":
         while True:
-            client_socket.send("\n##User 2##\n→")
+            client_socket.send("\n##User 2\n→")
             print "##User 2:##", client_socket.recv(8000)
-            client_socket.send("##User 1##\n→")               #WRITE YOUR NICK
-            client_socket.send(raw_input("##User 1##\n→") + "\n") #WRITE YOUR NICK
+            client_socket.send("##User 1\n→")               #WRITE YOUR NICK
+            client_socket.send(raw_input("##User 1\n→") + "\n") #WRITE YOUR NICK
 
 
     else:
         while True:
-            client_socket.send ('\n##' + nick + '##')
+            client_socket.send ('\n##' + nick)
             print nick , client_socket.recv(8000)
-            client_socket.send("##User 1##\n→")         #WRITE YOUR NICK
+            client_socket.send("##User 1\n→")         #WRITE YOUR NICK
             client_socket.send(raw_input("User 1\n→") + "\n") #WRITE YOUR NICK
 
 
