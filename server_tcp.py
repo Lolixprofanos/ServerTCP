@@ -31,7 +31,7 @@ try:
     select = (client_socket.recv(800))
     nick = select + "→"
 
-    if nick == "n":
+    if select == "n":
         while True:
             client_socket.send("\n##User 2##\n→")
             print "##User 2:##", client_socket.recv(8000)
